@@ -1,0 +1,9 @@
+type	base	def	ok
+object	base	def	ok50%
+string	base	string
+bytes	base
+list	base
+map
+set
+tuple
+int

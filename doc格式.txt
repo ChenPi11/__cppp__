@@ -1,0 +1,33 @@
+/**
+ * @file include/base_library/
+ * @author ChenPi11
+ * @copyright Copyright (C) 2023
+ * @date 2023-
+ * @language C++
+ * @brief C++ Plus
+ */
+
+/**
+ * @date 2023-
+ * @brief 
+ * @param 
+ * @return 
+ */
+
+### 
+#### 类型
+
+#### 原型
+```cpp
+
+```
+#### 说明
+
+#### 输入
++ 
+#### 返回
++ 
+#### 用法
+```cpp
+
+```
