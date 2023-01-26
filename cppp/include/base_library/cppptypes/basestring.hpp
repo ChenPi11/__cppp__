@@ -60,7 +60,7 @@ namespace _cpppbase
 		inline wchar_t* _wchhex(wchar_t c,wchar_t* res)
 		{
 			typedef unsigned char sint;
-#define tow(wch) (wchar_t)(wch < 10 ? (L'0' + wch) : L'a' + (wch - 10))
+#define __tow(wch) (wchar_t)(wch < 10 ? (L'0' + wch) : L'a' + (wch - 10))
 			res[0] = L'\\';
 			res[1] = L'x';
 			sint i;
@@ -71,12 +71,12 @@ namespace _cpppbase
 			i = 5;
 			while (i>=2)
 			{
-				res[i]=tow(c%16);
+				res[i]=__tow(c%16);
 				c = c / 16;
 				i--;
 			}
 			return res;
-#undef tow
+#undef __tow
 		}
 		inline size_t wrepr_size(_In_z_count_(len) const wchar_t* s, _In_ const size_t len)
 		{

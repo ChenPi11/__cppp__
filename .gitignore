@@ -29,15 +29,15 @@
 # Executables
 *.exe
 *.out
-*.app
 
 # dirs
 bin/
+obj/
 .vs/
 .obsidian/
 .vscode/
-bin/
-obj/
-x64/
 Release/
 Debug/
+tests/.vs
+tests/bin
+tests/obj

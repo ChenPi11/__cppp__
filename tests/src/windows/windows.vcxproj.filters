@@ -26,29 +26,38 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\base_library\cppptypes\basestring.hpp">
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\basebytes.hpp">
       <Filter>头文件\base_library\cppptypes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\base_library\cppptypes\string.hpp">
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\baseclass.hpp">
       <Filter>头文件\base_library\cppptypes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\base_library\_cpppinclude.h">
-      <Filter>头文件\base_library</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\base_library\_cpppmsg.h">
-      <Filter>头文件\base_library</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\base_library\_encoding.hpp">
-      <Filter>头文件\base_library</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\base_library\basedef.hpp">
-      <Filter>头文件\base_library</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\base_library\cppptypes\sln_string.hpp">
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\baseexception.hpp">
       <Filter>头文件\base_library\cppptypes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\base_library\cppptypes\exception.hpp">
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\baseobject.hpp">
       <Filter>头文件\base_library\cppptypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\basestring.hpp">
+      <Filter>头文件\base_library\cppptypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\exception.hpp">
+      <Filter>头文件\base_library\cppptypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\sln_string.hpp">
+      <Filter>头文件\base_library\cppptypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\cppptypes\string.hpp">
+      <Filter>头文件\base_library\cppptypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\_cpppinclude.h">
+      <Filter>头文件\base_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\_cpppmsg.h">
+      <Filter>头文件\base_library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cppp\include\base_library\_cpppsal.h">
+      <Filter>头文件\base_library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

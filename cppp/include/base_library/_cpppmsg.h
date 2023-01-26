@@ -31,18 +31,6 @@
 #define _CPPPMSG_ERROR_BadPointerError_DEFAULT_MSG L"Bad pointer"
 #define _CPPPMSG_ERROR_IndexError_DEFAULT_MSG L"Bad Index"
 
-//_memory.hpp
-
-//C++ Plus error msg : malloc error
-#define _CPPPMSG_ERROR_MALLOC_ERR L"malloc error"
-//C++ Plus error msg : calloc error
-#define _CPPPMSG_ERROR_CALLOC_ERR L"calloc error"
-//C++ Plus error msg : realloc error
-#define _CPPPMSG_ERROR_REALLOC_ERR L"realloc error"
-//C++ Plus error msg : bad pointer
-#define _CPPPMSG_ERROR_BAD_POINTER L"Bad pointer"
-
-
 //bytes.hpp/string.hpp
 
 //C++ Plus error msg : index out of range

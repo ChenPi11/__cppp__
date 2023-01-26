@@ -18,19 +18,19 @@
 
 未开发:basedef
 
-# cppp/src
+# cppp/tests/src
 测试用代码
-# ConsoleApplication1:
+# tests/ConsoleApplication1:
 实验场，实验新的特性
 
-# cppp.sln
-cppp windows平台sln
+# tests/cppp-test-windows.sln
+cppp windows平台测试项目
 # linux.sln
 cppp linux平台sln(不参与生成)
 # socket2.py
 远程编译工具，关于socket2,FileTPConsole,请见不存在的项目Remote Compile Enviroment(rce-linux)
 # Makefile
-linux Makefile
+Makefile
 # doc格式.txt
 请忽略
 

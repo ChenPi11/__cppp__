@@ -32,7 +32,7 @@ namespace _cpppbase
 		 * @param bufsiz	convert buffer size (only Linux)
 		 * @return _encoding_eror_t error info if errno
 		 */
-		_CONSTEXPR20 _encoding_error_t atow(const char* str, const size_t slen,
+		inline _encoding_error_t atow(const char* str, const size_t slen,
 			const wchar_t* cp,
 			wchar_t** out, size_t* lout,
 			const bool strict,const size_t bufsiz);
@@ -48,7 +48,7 @@ namespace _cpppbase
 		 * @param bufsiz	convert buffer size (only Linux)
 		 * @return _encoding_eror_t error info if errno
 		 */
-		_CONSTEXPR20 _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
+		inline _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
 			const wchar_t* cp,
 			char** out, size_t* lout,
 			const bool strict, const size_t bufsiz);
@@ -61,7 +61,7 @@ namespace _cpppbase
 			return res;
 		}
 #if _CPPPRT_PLATFORM == CPPPRT_PLATFORM_WIN32
-		_CONSTEXPR20 _encoding_error_t atow(const char* str, const size_t slen,
+		inline _encoding_error_t atow(const char* str, const size_t slen,
 			const wchar_t* cp,
 			wchar_t** out, size_t* lout,
 			const bool strict, const size_t bufsiz)
@@ -85,7 +85,7 @@ namespace _cpppbase
 			*lout = (size_t)len;
 			return {};
 		}
-		_CONSTEXPR20 _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
+		inline _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
 			const wchar_t* cp,
 			char** out, size_t* lout,
 			const bool strict, const size_t bufsiz)
@@ -176,7 +176,7 @@ namespace _cpppbase
 				return { 0,NULL };
 			}
 		}
-		_CONSTEXPR20 _encoding_error_t atow(const char* str, const size_t slen,
+		inline _encoding_error_t atow(const char* str, const size_t slen,
 			const wchar_t* cp,
 			wchar_t** out, size_t* lout,
 			const bool strict, const size_t bufsiz)
@@ -189,7 +189,7 @@ namespace _cpppbase
 			*lout = _lout / sizeof(wchar_t);
 			return ret;
 		}
-		_CONSTEXPR20 _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
+		inline _encoding_error_t wtoa(const wchar_t* wstr, const size_t slen,
 			const wchar_t* cp,
 			char** out, size_t* lout,
 			const bool strict,const size_t bufsiz)

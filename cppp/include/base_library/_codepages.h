@@ -200,7 +200,7 @@ namespace _cpppbase
 			 * @param len string length
 			 * @return wchar_t* cps's codename format string
 			 */
-			_CONSTEXPR20 wchar_t* __cppp_encoding_tocodename(const wchar_t* name,const size_t len)
+			inline wchar_t* __cppp_encoding_tocodename(const wchar_t* name,const size_t len)
 			{
 				wchar_t* res=(wchar_t*)malloc((sizeof(wchar_t)+1)*len);
 				for (size_t i=0; i<len; i++)
@@ -247,7 +247,7 @@ namespace _cpppbase
 			 * @return UINT codepage
 			 * @retval if not found,return (UINT)(-1)
 			 */
-			_CONSTEXPR20 static const UINT __cppp_encoding_getcp(const wchar_t* cpname)
+			inline static const UINT __cppp_encoding_getcp(const wchar_t* cpname)
 			{
 				size_t nlen = wcslen(cpname)+1;
 				UINT cp = __cppp_encoding_cpsfind(cpname,nlen);

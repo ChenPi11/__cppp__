@@ -91,7 +91,7 @@ wchar_t& _cpppbase::types::String::at(_In_ const size_t off) const
 {
 	if (off >= _len)
 	{
-		throw _cpppbase::builtins::IndexError(_CPPPMSG_ERROR_IndexError_DEFAULT_MSG);
+		throw _cpppbase::builtins::IndexError(_CPPPMSG_ERROR_INDEX_OUT_OF_RANGE);
 	}
 	return _data[off];
 }
@@ -107,6 +107,46 @@ std::wstring _cpppbase::types::String::__repr__() const
 		return res;
 	}
 	return std::wstring(_c_string(L"\"\""));// ""
+}
+
+_cpppbase::types::String _cpppbase::types::String::capitalize() const
+{
+	String res;
+	if (_len)
+	{
+		wchar_t* rd = cppp_copy_z(_len, _data);
+		rd[0] = towupper(rd[0]);
+		for (size_t i = 0; i < _len; i++)
+		{
+			rd[i] = towlower(rd[i]);
+		}
+		res.assign(rd, _len);
+	}
+	return res;
+}
+
+_cpppbase::types::String _cpppbase::types::String::center(_In_ const size_t width, _In_ const wchar_t fill) const
+{
+	if (width <= _len)
+	{
+		return String(*this);
+	}
+	size_t begin_chars = (width - _len) / 2;
+	wchar_t* res = new wchar_t[width+1];
+	res[width] = L'\0';
+	for (size_t i = 0; i < begin_chars; i++)
+	{
+		res[i] = fill;//begins
+	}
+	for (size_t i = 0; i < _len; i++)
+	{
+		res[i + begin_chars] = _data[i];//texts
+	}
+	for (size_t i = begin_chars + _len; i < width; i++)
+	{
+		res[i] = fill;//ends
+	}
+	return String(width, res);
 }
 
 
