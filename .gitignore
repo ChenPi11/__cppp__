@@ -38,6 +38,7 @@ obj/
 .vscode/
 Release/
 Debug/
+build/
 tests/.vs
 tests/bin
 tests/obj
