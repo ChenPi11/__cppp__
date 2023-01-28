@@ -8,7 +8,7 @@
  * @brief C++ Plus Builder console base
 
 C++ Plus Test Program builder
-Build C++ Plus Test Program on GCC.
+Build C++ Plus Test Program on MSBuild.
 
 LICENCE MIT Licence
 '''

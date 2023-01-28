@@ -1,3 +1,16 @@
+#!/bin/env python3
+'''
+ * @package cppp_test_builder
+ * @file tools/cppp_test_builder.py
+ * @copyright Copyright (C) 2023
+ * @date 2023-1-27
+ * @language Python
+ * @brief C++ Plus Builder console base
+
+C++ Plus Test Program builder
+
+LICENCE MIT Licence
+'''
 import platform
 import sys
 
