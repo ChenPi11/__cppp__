@@ -3,48 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppp-windows", "src\cppp-windows.vcxproj", "{8AB048D4-8744-4C00-B917-517F2F95B94C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppp-windows-test", "src\cppp-windows.vcxproj", "{8AB048D4-8744-4C00-B917-517F2F95B94C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		cxx14-debug|Win32 = cxx14-debug|Win32
 		cxx14-debug|x64 = cxx14-debug|x64
-		cxx14-debug|x86 = cxx14-debug|x86
+		cxx14-release|Win32 = cxx14-release|Win32
 		cxx14-release|x64 = cxx14-release|x64
-		cxx14-release|x86 = cxx14-release|x86
+		cxx17-debug|Win32 = cxx17-debug|Win32
 		cxx17-debug|x64 = cxx17-debug|x64
-		cxx17-debug|x86 = cxx17-debug|x86
+		cxx17-release|Win32 = cxx17-release|Win32
 		cxx17-release|x64 = cxx17-release|x64
-		cxx17-release|x86 = cxx17-release|x86
+		cxx20-debug|Win32 = cxx20-debug|Win32
 		cxx20-debug|x64 = cxx20-debug|x64
-		cxx20-debug|x86 = cxx20-debug|x86
+		cxx20-release|Win32 = cxx20-release|Win32
 		cxx20-release|x64 = cxx20-release|x64
-		cxx20-release|x86 = cxx20-release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|Win32.ActiveCfg = cxx14-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|Win32.Build.0 = cxx14-debug|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|x64.ActiveCfg = cxx14-debug|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|x64.Build.0 = cxx14-debug|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|x86.ActiveCfg = cxx14-debug|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-debug|x86.Build.0 = cxx14-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|Win32.ActiveCfg = cxx14-release|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|Win32.Build.0 = cxx14-release|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|x64.ActiveCfg = cxx14-release|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|x64.Build.0 = cxx14-release|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|x86.ActiveCfg = cxx14-release|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx14-release|x86.Build.0 = cxx14-release|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|Win32.ActiveCfg = cxx17-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|Win32.Build.0 = cxx17-debug|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|x64.ActiveCfg = cxx17-debug|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|x64.Build.0 = cxx17-debug|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|x86.ActiveCfg = cxx17-debug|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-debug|x86.Build.0 = cxx17-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|Win32.ActiveCfg = cxx17-release|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|Win32.Build.0 = cxx17-release|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|x64.ActiveCfg = cxx17-release|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|x64.Build.0 = cxx17-release|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|x86.ActiveCfg = cxx17-release|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx17-release|x86.Build.0 = cxx17-release|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|Win32.ActiveCfg = cxx20-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|Win32.Build.0 = cxx20-debug|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|x64.ActiveCfg = cxx20-debug|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|x64.Build.0 = cxx20-debug|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|x86.ActiveCfg = cxx20-debug|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-debug|x86.Build.0 = cxx20-debug|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|Win32.ActiveCfg = cxx20-release|Win32
+		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|Win32.Build.0 = cxx20-release|Win32
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|x64.ActiveCfg = cxx20-release|x64
 		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|x64.Build.0 = cxx20-release|x64
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|x86.ActiveCfg = cxx20-release|Win32
-		{8AB048D4-8744-4C00-B917-517F2F95B94C}.cxx20-release|x86.Build.0 = cxx20-release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

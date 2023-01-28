@@ -62,6 +62,7 @@
 #include <sstream>
 #include <type_traits>
 #include <map>
+#include <typeinfo>
 #endif
 
 //C++ Plus include
@@ -70,23 +71,6 @@
 #include "_cpppsal.h"
 
 //C++ Plus defines
-# ifndef _CONSTEXPR20
-#    if _HAS_CXX20
-#        define _CONSTEXPR20 constexpr
-#    else
-#        define _CONSTEXPR20 inline
-#    endif
-# endif
-# ifndef __cplusplus
-#	define constexpr
-# endif
-# ifndef _NODISCARD
-#	if _HAS_CXX17
-#		define _NODISCARD [[nodiscard]]
-#	else
-#		define _NODISCARD
-#	endif
-# endif
 # ifdef _MAC
 #	ifndef wchar_t
 #		define unsigned short wchar_t // some Macintosh compilers don't define wchar_t in a convenient location, or define it as a char

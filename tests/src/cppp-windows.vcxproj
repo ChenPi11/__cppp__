@@ -56,6 +56,7 @@
     <ProjectGuid>{8ab048d4-8744-4c00-b917-517f2f95b94c}</ProjectGuid>
     <RootNamespace>cpppwindows</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cppp-windows-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-debug|Win32'" Label="Configuration">
@@ -180,74 +181,74 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-debug|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx17-debug|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx20-debug|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-debug|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx17-debug|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx20-debug|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-release|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx17-release|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx20-release|Win32'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-release|x64'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx17-release|x64'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cxx20-release|x64'">
-    <TargetName>$(ProjectName)-test-$(Platform)-$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)-$(Platform)-$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)..\cppp\include</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='cxx14-debug|Win32'">

@@ -17,7 +17,7 @@ namespace _cpppbase
             Errno(_In_ const int __c, _In_ const bool __i = false) noexcept : code(__c), iswinerror(__i) {}
 #if _CPPPRT_PLATFORM ==CPPPRT_PLATFORM_WIN32
             Errno(_In_ const DWORD __c, _In_ const bool __i = true) noexcept : code((int)__c), iswinerror(__i) {}
-            constexpr void set(_In_ const DWORD __c, _In_ const bool __i = false) noexcept
+            void set(_In_ const DWORD __c, _In_ const bool __i = false) noexcept
             {
                 code = (int)__c;
                 iswinerror = __i;
@@ -28,12 +28,12 @@ namespace _cpppbase
                 code = (int)c;
                 return *this;
             }
-            constexpr bool operator==(const DWORD c) const noexcept
+            bool operator==(const DWORD c) const noexcept
             {
                 return code == c;
             }
 #endif
-            constexpr void set(_In_ const int __c, _In_ const bool __i = false) noexcept
+            void set(_In_ const int __c, _In_ const bool __i = false) noexcept
             {
                 code = __c; iswinerror = __i;
             }
@@ -72,7 +72,7 @@ namespace _cpppbase
         {
         public:
             Exception() = default;
-            Exception(const Exception& e) : msg(e.msg), name(e.name), code(e.code), info(e.info) {}
+            Exception(const Exception& e) : msg(e.msg), code(e.code), info(e.info), name(e.name) {}
             Exception(const String& __m, Errno __c = Errno(0), void* __i = NULL, String __n = String(L"Exception")) : msg(__m), code(__c), info(__i), name(__n) {}
 
             virtual std::wstring __str__() const { return name + L": " + msg; }
@@ -80,7 +80,6 @@ namespace _cpppbase
             {
                 return name + L"(" + msg + L")";
             }
-            
             operator std::wstring() const { return __str__(); }
             //operator std::string() const { return what(); }
             String msg;

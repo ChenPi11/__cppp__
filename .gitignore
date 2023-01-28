@@ -42,3 +42,4 @@ build/
 tests/.vs
 tests/bin
 tests/obj
+__pycache__/

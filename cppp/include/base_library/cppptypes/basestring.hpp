@@ -25,7 +25,7 @@ namespace _cpppbase
 			BaseString() = default;
 			//deconstruct
 			~BaseString() = default;
-			_CONSTEXPR20 operator std::wstring()
+			inline operator std::wstring()
 			{
 				return std::wstring(_data, _len);
 			}

@@ -120,5 +120,41 @@
 #define _CPPPRT_CRT_SECURE_NO_WARNINGS 1
 #endif
 
+//fix MSVC __cplusplus==199711L
+#ifdef _MSVC_LANG
+//MSVC C++ Plus
+#define __CPPP_CPPVER _MSVCLANG
+#else
+#ifndef __cplusplus
+//C
+#define __CPPP_CPPVER 0L
+#else
+//C++ Plus C++ Version
+#define __CPPP_CPPVER __cplusplus
+#endif
+#endif
+
+//C++03
+#define __CPPP_CPPVER_CXX03 199711L
+//C++11
+#define __CPPP_CPPVER_CXX11 201103L
+//C++14
+#define __CPPP_CPPVER_CXX14 201402L
+//C++17
+#define __CPPP_CPPVER_CXX17 201703L
+//C++20
+#define __CPPP_CPPVER_CXX20 202002L
+
+#if __CPPP_CPPVER >=__CPPP_CPPVER_CXX14
+#define _CPPP_CONSTEXPR14 constexpr
+#else
+#define _CPPP_CONSTEXPR14
+#endif
+
+#if __CPPP_CPPVER <=__CPPP_CPPVER_CXX11
+#define _CPPP_CONSTEXPR11 constexpr
+#else
+#define _CPPP_CONSTEXPR11
+#endif
 
 #endif

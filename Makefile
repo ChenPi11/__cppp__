@@ -1,3 +1,2 @@
 all:
-	cd tests && make
-	g++ cppp/src/linux/main.cpp -Icppp/include
+	cd tools && python cppp_test_builder.py

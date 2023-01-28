@@ -7,7 +7,7 @@ int main(int argc,char* argv[])
     SetConsoleOutputCP(GetConsoleOutputCP());//refresh codepage
 #endif
     setlocale(LC_ALL, "en_US.utf-8");//init locale
-    printf("C++ Version: %d", __cplusplus);
+    wprintf(L"C++ Version: %d", __cplusplus);
     String str(L"TEST");
     wprintf(str.c_str());
     return 0;

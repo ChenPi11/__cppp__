@@ -1,20 +1,25 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include "../../cppp/include/base_library/cppptypes/sln_string.hpp"
-//#include <stacktrace>
+
+int dt = 0;
+constexpr int foo()
+{
+    return dt;
+}
+volatile int x;
 int main(void)
 {
-    _cpppbase::types::String wstr, s,__;
-    wstr = L"test测试";
-    s = L"abcd测试";
-    
-    for (size_t i = 0; i < 100; i++)
+    size_t _;
+    for (size_t j = 0; j < 1000; j++)
     {
-        auto x=GetTickCount64();
-        for (size_t j = 0; j < 500000; j++)
+        size_t l = GetTickCount64();
+        for (size_t i = 0; i < 100000000; i++)
         {
-            __=wstr + s;
+            x = foo();
         }
-        std::cout<<GetTickCount64()-x<<"\n";
+        _ = GetTickCount64();
+        std::cout << (_-l)<<"\n";
+        std::cerr << j/10 << "\n";
     }
 }

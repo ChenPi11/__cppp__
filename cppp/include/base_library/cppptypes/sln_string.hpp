@@ -52,32 +52,32 @@ _cpppbase::types::String::~String() noexcept
 	delete[] _data;
 }
 
-_Ret_maybenull_ inline constexpr wchar_t* _cpppbase::types::String::data() const noexcept
+_Ret_maybenull_ _CPPP_CONSTEXPR14 wchar_t* _cpppbase::types::String::data() const noexcept
 {
 	return _data;
 }
 
-_Ret_z_ inline constexpr const wchar_t* _cpppbase::types::String::c_str() const noexcept
+_Ret_z_ inline _CPPP_CONSTEXPR14 const wchar_t* _cpppbase::types::String::c_str() const noexcept
 {
 	return _len==0?L"":_data;
 }
 
-inline constexpr size_t _cpppbase::types::String::len() const noexcept
+inline _CPPP_CONSTEXPR14 size_t _cpppbase::types::String::len() const noexcept
 {
 	return _len;
 }
 
-inline constexpr size_t _cpppbase::types::String::length() const noexcept
+inline _CPPP_CONSTEXPR14 size_t _cpppbase::types::String::length() const noexcept
 {
 	return _len;
 }
 
-inline constexpr size_t _cpppbase::types::String::size() const noexcept
+inline _CPPP_CONSTEXPR14 size_t _cpppbase::types::String::size() const noexcept
 {
 	return _len;
 }
 
-_CONSTEXPR20 std::wstring _cpppbase::types::String::__str__() const noexcept
+std::wstring _cpppbase::types::String::__str__() const noexcept
 {
 	return std::wstring(_data, _len);
 }

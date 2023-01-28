@@ -25,13 +25,13 @@ namespace _cpppbase
             template<typename T>
             constexpr const wchar_t* const gty()
             {
-                return  (std::is_class_v<T>)    ? L"class"      :
-                        (std::is_union_v<T>)    ? L"value"      :
-                        (std::is_pointer_v<T>)  ? L"pointer"    :
-                        (std::is_enum_v<T>)     ? L"enum"       :
-                        (std::is_array_v<T>)    ? L"array"      :
-                        (std::is_void_v<T>)     ? L"void"       :
-                        (std::is_function_v<T>) ? L"function"   :
+                return  (std::is_class<T>::value)    ? L"class"      :
+                        (std::is_union<T>::value)    ? L"value"      :
+                        (std::is_pointer<T>::value)  ? L"pointer"    :
+                        (std::is_enum<T>::value)     ? L"enum"       :
+                        (std::is_array<T>::value)    ? L"array"      :
+                        (std::is_void<T>::value)     ? L"void"       :
+                        (std::is_function<T>::value) ? L"function"   :
                                                   L"type";
             }
         }
@@ -125,13 +125,13 @@ namespace _cpppbase
              * @brief get multi-bytes name string
              * @return std::string string
              */
-            _CONSTEXPR20 operator std::string() const noexcept{ return __bname__; }
+            operator std::string() const noexcept{ return __bname__; }
             /**
              * @date 2023-1-18
              * @brief get name text
              * @return std::wstring text
              */
-            _CONSTEXPR20 operator std::wstring() const noexcept { return __name__; }
+            operator std::wstring() const noexcept { return __name__; }
             /**
              * @date 2023-1-18
              * @brief get type hash

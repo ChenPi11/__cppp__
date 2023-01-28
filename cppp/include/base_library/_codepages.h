@@ -221,7 +221,7 @@ namespace _cpppbase
 			 * @pre param name MUST can be found in cps,or return (UINT)(-1)
 			 * @warning you'd better use "getcp" function
 			 */
-			_CONSTEXPR20 static const UINT __cppp_encoding_cpsfind(const wchar_t* name,const size_t len)
+			const UINT __cppp_encoding_cpsfind(const wchar_t* name,const size_t len)
 			{
 				for (size_t i = 1; i < __cppp_encoding_cpslen; i += 2)
 				{
@@ -247,7 +247,7 @@ namespace _cpppbase
 			 * @return UINT codepage
 			 * @retval if not found,return (UINT)(-1)
 			 */
-			inline static const UINT __cppp_encoding_getcp(const wchar_t* cpname)
+			inline const UINT __cppp_encoding_getcp(const wchar_t* cpname)
 			{
 				size_t nlen = wcslen(cpname)+1;
 				UINT cp = __cppp_encoding_cpsfind(cpname,nlen);
@@ -268,7 +268,7 @@ namespace _cpppbase
 			 * @param UINT codepage : codepage
 			 * @return const wchar_t* : codepage name
 			 */
-			_CONSTEXPR20 static const wchar_t* __cppp_encoding_which(UINT codepage)
+			const wchar_t* __cppp_encoding_which(UINT codepage)
 			{
 				for (size_t i = 0; i < sizeof(__cppp_encoding_cps); i += 2)
 				{

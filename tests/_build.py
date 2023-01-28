@@ -9,7 +9,7 @@ try:
 except:
     nullio=open("devnull.tmp","w+")
 def title(t):
-    sys.stdout.write("\033]0;%s3\007" % t)
+    stdout.write("\033]0;%s3\007" % t)
 if(platform.uname()[0]=="Windows"):
     try:
         cp=ctypes.windll.kernel32.GetConsoleCP()
@@ -18,7 +18,7 @@ if(platform.uname()[0]=="Windows"):
         p.wait()
         def _title(t):
             ctypes.windll.kernel32.SetConsoleTitleW(t)
-        title=_title;
+        title=_title
     except:
         pass
 
