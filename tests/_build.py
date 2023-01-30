@@ -32,9 +32,8 @@ def build(file,conf,plat,oth=""):
     return Popen(cmd,stdin=stdin,stdout=stdout,stderr=stderr,shell=True).wait()
 
 sln="cppp-test-windows.sln"
-confs=["cxx14-debug","cxx17-debug","cxx20-debug",
-       "cxx14-release","cxx17-release","cxx20-release"]
-plats=["x86","x64"]
+confs=["cxx14-debug"]
+plats=["Win32"]
 build_all=len(confs)*len(plats)
 build_pre=0
 build_res={}

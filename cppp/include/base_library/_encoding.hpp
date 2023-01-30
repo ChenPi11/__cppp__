@@ -72,9 +72,9 @@ namespace _cpppbase
 				return _encoding_error_t{ 0, _CPPPMSG_ERROR_INVALID_CP };//codepage name not found
 			}
 			if (slen == 0) { out = NULL; lout = 0; return {}; }
-			int len = MultiByteToWideChar(code, NULL, str, (int)slen, NULL, 0);
+			int len = MultiByteToWideChar(code, 0, str, (int)slen, NULL, 0);
 			wchar_t* wch = new wchar_t[(size_t)len + 1];
-			int res = MultiByteToWideChar(code, NULL, str, (int)slen, wch, len);
+			int res = MultiByteToWideChar(code, 0, str, (int)slen, wch, len);
 			if (res == 0 && strict)
 			{
 				delete[] wch;

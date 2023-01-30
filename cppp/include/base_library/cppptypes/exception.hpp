@@ -9,6 +9,13 @@ namespace _cpppbase
 {
     namespace types
     {
+        String _tostr(unsigned long long x)
+        {
+            size_t l;
+            wchar_t* ws = _cpppbase::types::wchdec(x,l);
+            return String(l,ws);
+        }
+
         class Errno : public Object
         {
         public:
@@ -90,12 +97,6 @@ namespace _cpppbase
             String name;
         };
 
-        template<typename T>
-        String tostring(const T& x)
-        {
-            return String(std::to_wstring(x).c_str(),1);
-        }
-
         class OSError : public Exception
         {
         public:
@@ -125,7 +126,7 @@ namespace _cpppbase
                 }
                 else
                 {
-                    return name + L": [Errno " + tostring((unsigned long)code.code) + L"q " +
+                    return name + L": [Errno " + _tostr((unsigned long)code.code) + L"q " +
                         code.strerror() + L"]: " + msg;
                 }
             }

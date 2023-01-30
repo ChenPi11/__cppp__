@@ -79,7 +79,7 @@ namespace _cpppbase
             {
                 __hash__ = typeid(Ty).hash_code();
                 __bname__ = typeid(Ty).name();
-#if _CPPPRT_PLATFORM == CPPPRT_PLATFORM_WIN32
+#ifdef _MSVC_LANG
                 __braw__ = typeid(Ty).raw_name();
 #else
                 __braw__ = __bname__;
@@ -91,11 +91,13 @@ namespace _cpppbase
                 {
                     __type__.assign(gettype::gty<Ty>());
                     __name__.assign(out, lout);
+                    delete[] out;
                 }
                 e=_cpppbase::_encoding::atow(__braw__.c_str(),__braw__.size(),L"utf-8",&out,&lout,false,BUFSIZ);
                 if(!(e.eno || e.msg))
                 {
                     __raw__.assign(out,lout);
+                    delete[] out;
                 }
                 return *this;
             }
@@ -137,7 +139,7 @@ namespace _cpppbase
              * @brief get type hash
              * @return size_t hash
              */
-            constexpr operator size_t() const noexcept { return __hash__; }
+            _CPPP_CONSTEXPR14 operator size_t() const noexcept { return __hash__; }
             /**
              * @date 2023-1-18
              * @brief compare Type

@@ -78,6 +78,30 @@ namespace _cpppbase
 			return res;
 #undef __tow
 		}
+		inline wchar_t* wchdec(unsigned long long c,size_t& outlen)
+		{
+			if(c == 0ULL)
+			{
+				outlen = 1ULL;
+				return cppp_copy_z(1,L"0");
+			}
+			wchar_t _res[sizeof("18446744073709551615")] = L"\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0";
+			outlen = 0ULL;
+			while (c>0)
+			{
+				_res[outlen]=(wchar_t)(L'0' + (wchar_t)(c%10ULL));
+				c = c / 10ULL;
+				outlen++;
+			}
+			outlen = wcslen(_res);
+			wchar_t* res=new wchar_t[outlen+1];
+			for(size_t j = 0;j <= outlen;j++)
+			{
+				res[j] = _res[outlen-j-1ULL];
+			}
+			res[outlen] = L'\0';
+			return res;
+		}
 		inline size_t wrepr_size(_In_z_count_(len) const wchar_t* s, _In_ const size_t len)
 		{
 			size_t res=0;

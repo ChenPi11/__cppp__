@@ -14,7 +14,6 @@ LICENCE MIT Licence
 import platform
 import sys
 
-
 def test_build():
     try:
         if(platform.uname()[0]=="Windows"):

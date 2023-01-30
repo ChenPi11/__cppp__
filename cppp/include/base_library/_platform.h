@@ -112,7 +112,7 @@
 #define __fastcall
 #endif
 
-#if _CPPPRT_PLATFORM == CPPPRT_PLATFORM_WIN32 && !defined(_CRT_SECURE_NO_WARNINGS)
+#if defined(_MSVC_LANG) && !defined(_CRT_SECURE_NO_WARNINGS)
 //This C++ Plus program doesn't use C Runtime Secure no warning
 #define _CPPPRT_CRT_SECURE_NO_WARNINGS 0
 #else
@@ -120,10 +120,11 @@
 #define _CPPPRT_CRT_SECURE_NO_WARNINGS 1
 #endif
 
+
 //fix MSVC __cplusplus==199711L
 #ifdef _MSVC_LANG
 //MSVC C++ Plus
-#define __CPPP_CPPVER _MSVCLANG
+#define __CPPP_CPPVER _MSVC_LANG
 #else
 #ifndef __cplusplus
 //C
@@ -156,5 +157,11 @@
 #else
 #define _CPPP_CONSTEXPR11
 #endif
+
+#ifndef __cplusplus
+#define nullptr (void*)0
+#endif
+
+
 
 #endif

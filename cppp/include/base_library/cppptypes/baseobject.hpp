@@ -12,6 +12,7 @@
 #include "../_cpppinclude.h"
 #include "../_encoding.hpp"
 #include "baseclass.hpp"
+#include "basestring.hpp"
 namespace _cpppbase
 {
 	namespace types
@@ -133,9 +134,7 @@ namespace _cpppbase
 		std::wstring repr(const T& t)
 		{
 			return std::wstring(L"<")+
-					_get_obj_cls<T>(t)+L" object at "+
-					std::to_wstring((__POINTER_TYPE__)(void*)&t)
-					+ L">";
+					_get_obj_cls<T>(t)+L" object>";
 		}
 		
 		/**

@@ -111,9 +111,10 @@ namespace _cpppbase
 					if (lpMsgBuf == NULL)
 					{
 					ERR2:
-						wchar_t* buf = new wchar_t[11] {};
-						_ultow_s(le, buf,11, 10);
-						return { 11,buf };
+						//wchar_t* buf = new wchar_t[1]{L''};
+						//_ultow_s(le, buf,11, 10);
+						//return { 11,buf };
+						return {0, nullptr};
 					}
 					lpMsgBuf = _GetFormattedMessage(lpMsgBuf, &msgsiz, hexle.c_str(), L"This Application");
 					if (lpMsgBuf == NULL)
